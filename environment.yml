@@ -4,12 +4,12 @@ dependencies:
   - python=3.7.7
   - pip
   - websockify
-  - jupyter-server-proxy
   - conda-forge::pyimagej
   - conda-forge::pyjnius=1.2.0
   - conda-forge::openjdk=8.0
   - numpy
   - scipy
+  - jupyter-server-proxy
   - pip:
     - .
     - scikit-image
@@ -17,7 +17,6 @@ dependencies:
     - pandas
     - pillow
     - requests
-    - imjoy
     - imjoy-rpc>=0.2.5
     - imjoy-jupyter-extension
     - imjoy-elfinder
