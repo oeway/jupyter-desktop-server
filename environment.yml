@@ -1,10 +1,10 @@
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.7.7
   - pip
   - websockify
+  - jupyter-server-proxy
   - conda-forge::pyimagej
   - conda-forge::pyjnius=1.2.0
   - conda-forge::openjdk=8.0
@@ -21,4 +21,4 @@ dependencies:
     - imjoy-rpc>=0.2.5
     - imjoy-jupyter-extension
     - imjoy-elfinder
-    - jupyter-server-proxy
+
