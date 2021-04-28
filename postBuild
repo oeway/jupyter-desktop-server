@@ -1,0 +1,10 @@
+wget https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
+unzip fiji-linux64.zip -d /home/jovyan
+wget https://github.com/deepimagej/deepimagej-plugin/releases/download/2.1.7-SNAPSHOT/DeepImageJ_-2.1.7-SNAPSHOT.jar
+mv DeepImageJ_-2.1.7-SNAPSHOT.jar /home/jovyan/Fiji.app/plugins
+wget https://github.com/deepimagej/deepimagej-plugin/releases/download/2.1.7-SNAPSHOT/dependencies_217.zip
+unzip dependencies_217.zip
+mv -f dependencies_2.1.7/* /home/jovyan/Fiji.app/jars/
+rm /home/jovyan/Fiji.app/jars/FilamentDetector-1.0.0.jar
+
+python3 -c 'import imagej;ij = imagej.init("/home/jovyan/Fiji.app", headless=False);print("pyimagej initialized.")'
